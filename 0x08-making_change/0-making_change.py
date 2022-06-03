@@ -3,6 +3,9 @@
 
 def makeChange(coins, total):
     """make change algorithim"""
+    if total < 0:
+        return -1
+
     dp = [total + 1] * (total +1)
     dp[0] = 0
 
