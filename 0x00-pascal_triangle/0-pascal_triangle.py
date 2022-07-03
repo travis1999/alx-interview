@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """pascals triangle"""
-import time
 
 def print_triangle(triangle):
     """pascals triangle"""
