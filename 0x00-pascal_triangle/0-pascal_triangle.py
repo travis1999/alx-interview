@@ -1,8 +1,13 @@
 #!/usr/bin/python3
 """pascals triangle"""
 
+
 def print_triangle(triangle):
     """pascals triangle"""
+
+    if triangle <= 0:
+        return []
+    
     previous = [0, 1, 0]
     
     for _ in range(triangle - 1):
