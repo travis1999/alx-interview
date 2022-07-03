@@ -2,15 +2,15 @@
 """pascals triangle"""
 
 
-def print_triangle(triangle):
+def print_triangle(n):
     """pascals triangle"""
 
-    if triangle <= 0:
+    if n <= 0:
         return []
     
     previous = [0, 1, 0]
     
-    for _ in range(triangle - 1):
+    for _ in range(n - 1):
         x = 0
         current = []
 
@@ -23,4 +23,3 @@ def print_triangle(triangle):
         previous.append(0)
 
     return previous[1:-1]
-
